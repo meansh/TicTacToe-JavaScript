@@ -1,0 +1,39 @@
+.bg {
+  background-image: url(/assets/night.png);
+  background-size: cover;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.box {
+  width: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: pink;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 762px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}

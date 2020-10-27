@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./assets/TicTac.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body class="bg">
+  <h1 class="heading">Tic Tac Toe</h1>
+  <div class="grid">
+    <div class="box">
+      <select id="demo1" onclick="handleOnClick1(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo2" onclick="handleOnClick2(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo3" onclick="handleOnClick3(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo4" onclick="handleOnClick4(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo5" onclick="handleOnClick5(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo6" onclick="handleOnClick6(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo7" onclick="handleOnClick7(event)">
+        <option>cross</option>
+        <!--ANCHOR -->
+        
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo8" onclick="handleOnClick8(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+    <div class="box">
+      <select id="demo9" onclick="handleOnClick9(event)">
+        <option>cross</option>
+        <option>circle</option>
+      </select>
+    </div>
+  </div>
+  <script>
+    function handleOnClick1(event) {
+      var x1 = document.getElementById("demo1");
+      document.write(x1.options[x1.selectedIndex].text);
+    }
+
+    function handleOnClick2(event) {
+      var x2 = document.getElementById("demo1");
+      document.write(x2.options[x2.selectedIndex].text);
+    }
+    function handleOnClick3(event) {
+      var x3 = document.getElementById("demo2");
+      document.write(x3.options[x3.selectedIndex].text);
+    }
+    function handleOnClick4(event) {
+      var x4 = document.getElementById("demo3");
+      document.write(x4.options[x4.selectedIndex].text);
+    }
+    function handleOnClick5(event) {
+      var x5 = document.getElementById("demo4");
+      document.write(x5.options[x5.selectedIndex].text);
+    }
+    function handleOnClick6(event) {
+      var x6 = document.getElementById("demo5");
+      document.write(x6.options[x.selectedIndex].text);
+    }
+    function handleOnClick7(event) {
+      var x7 = document.getElementById("demo6");
+      document.write(x7.options[x7.selectedIndex].text);
+    }
+    function handleOnClick8(event) {
+      var x8 = document.getElementById("demo7");
+      document.write(x8.options[x8.selectedIndex].text);
+    }
+    function handleOnClick9(event) {
+      var x9 = document.getElementById("demo8");
+      document.write(x9.options[x9.selectedIndex].text);
+    }
+  </script>
+
+  <script>
+        function winOrLoss(pos[x]){
+    if (pos[0] != "0" && pos[0] == pos[1] && pos[1] == pos[2]) print("Player wins");
+    else if (pos[3] != "0" && pos[3] == pos[4] && pos[4] == pos[5]) print("Win");
+    else if (pos[6] != "0" && pos[6] == pos[7] && pos[7] == pos[8]) print("Win");
+    else if (pos[0] != "0" && pos[0] == pos[3] && pos[3] == pos[6]) print("Win");
+    else if (pos[1] != "0" && pos[1] == pos[4] && pos[4] == pos[7]) print("Win");
+    else if (pos[2] != "0" && pos[2] == pos[5] && pos[5] == pos[8]) print("Win");
+    //ANCHOR
+    else if (pos[0] != "0" && pos[0] == pos[4] && pos[4] == pos[8]) print("Win");
+    else if (pos[2] != "0" && pos[2] == pos[4] && pos[4] == pos[6]) print("Win");
+    else print("loss");
+    }
+  </script>
+</body>
